@@ -1,16 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+
+<ArticleText title="Article title" :likes="501"/>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import KamrulHello from "./components/KamrulHello.vue";
+import ArticleText from "./components/ArticleText.vue";
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: "App",
+    components: {
+      // KamrulHello,  
+       ArticleText },
+    data() {
+      return {
+        name: 'Md. Kamrul Hasan',
+        herroname: 'Man Of Steel'
+      }
+    },
 }
 </script>
 
